@@ -2,13 +2,14 @@
 
 Die jeweiligen LEDs werden mit den Tastern angesteuert.
 
-Taster 1 = Alle LEDs an
-Taster 2 = Grüne LED an -> erneut betätigt LED aus
-Taster 3 = Gelbe LED an -> erneut betätigt LED aus
-Taster 4 = Rote LED an -> erneut betätigt LED aus
-Taster 5 = Alle LED an -> erneut betätigt LED aus
+Taster 1&2 gleichzeigtig gedrück = Alle LEDs an
+Taster 1&2 gleichzeigtig gedrück = Alle LEDs aus
 
-![Schaltplan](https://github.com/VanMos99/MCR_Projekt_Kommunikationsprotokolle/assets/145934046/cfbf71bd-96c8-4bac-9af1-6ebc7febb8c9)
+Taster 1 = 1. Grün an, 2. Gelb an, 3. Rot an
+Taster 2 = 1. Grün aus, 2. Gelb aus, 3. Rot aus
+
+
+![Schaltplan](https://github.com/VanMos99/MCR_Projekt_Kommunikationsprotokolle/assets/145934046/6c875cd1-ce72-4c20-87fc-50e1300379b4)
 
 
 
