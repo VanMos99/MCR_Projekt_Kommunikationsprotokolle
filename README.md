@@ -1,5 +1,7 @@
 # MCR_Projekt_Kommunikationsprotokoll 
 
+Gruppe: 1
+
 Die jeweiligen LEDs werden mit den Tastern angesteuert.
 
 Taster 1&2 gleichzeigtig gedrück = Alle LEDs an
