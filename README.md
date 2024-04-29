@@ -4,7 +4,7 @@ Gruppe: 1
 
 Die jeweiligen LEDs werden mit den Tastern T1, T2, T3 angesteuert.
 
-Taster 1 einmal gedrückt = LED Rot an
+Taster 1 einmal gedrückt = LED Rot an \n
 Taster 1 erneut gedrückt = LED Rot aus
 
 Taster 2 einmal gedrückt = LED Gelb an
