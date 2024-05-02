@@ -32,8 +32,8 @@ void receiveEvent(int numBytes);
 
 void setup() {
   Wire.begin(SLAVE_ADDR);         // Als I2C-Slave mit angegebener Adresse initialisieren
-   // Handler-Funktion für Anfragen registrieren
-  Wire.onRequest(requestEvent);  
+   
+  Wire.onRequest(requestEvent);  // Handler-Funktion für Anfragen registrieren
   Wire.onReceive(receiveEvent);   // Handler-Funktion für empfangene Daten registrieren
   
   // Pin-Modus für LEDs konfigurieren
