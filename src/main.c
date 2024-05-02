@@ -206,8 +206,8 @@ int main(){
             */
 
 
-            i2c_master_receive(I2C1,SlAVE_ADDR,&DATA,1);
-             UART_LOG(DATA);
+         //   i2c_master_receive(I2C1,SlAVE_ADDR,&DATA,1);
+         //    UART_LOG(DATA);
 
 
        }
