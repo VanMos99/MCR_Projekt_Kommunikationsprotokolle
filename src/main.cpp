@@ -32,8 +32,8 @@ void receiveEvent(int numBytes);
 
 void setup() {
   Wire.begin(SLAVE_ADDR);         // Als I2C-Slave mit angegebener Adresse initialisieren
-   
-  Wire.onRequest(requestEvent);  // Handler-Funktion für Anfragen registrieren
+   // Handler-Funktion für Anfragen registrieren
+  Wire.onRequest(requestEvent);  
   Wire.onReceive(receiveEvent);   // Handler-Funktion für empfangene Daten registrieren
   
   // Pin-Modus für LEDs konfigurieren
@@ -43,8 +43,8 @@ void setup() {
 
   // Serielle Kommunikation starten (für Debug-Zwecke)
   Serial.begin(115200);             
-  Serial.println("Gruppennummer: 1 ");
-  Serial.println("Mikrokontroller ist der SLAVE! Addresse 0x12");
+  Serial.println("I2C: Gruppennummer: 1 ");
+  Serial.println("I2C: Mikrokontroller ist der SLAVE! Addresse 0x12");
  
 }
 
@@ -73,29 +73,30 @@ void loop()
     
       if(receivedDataMaster == ROT_EIN){ // Rot LED einschalten
           digitalWrite(LED_Rot, HIGH); 
-          Serial.println("Rot ist an");
+          Serial.println("I2C: Slave received");
+          Serial.println("LED: Rot ist an");
          
       }
       else if(receivedDataMaster == ROT_AUS){ // Rot LED ausschalten
         digitalWrite(LED_Rot, LOW);
-        Serial.println("Rot ist aus");
+        Serial.println("LED: Rot ist aus");
       }
       else if(receivedDataMaster == GELB_EIN){ // Gelbe LED einschalten
           digitalWrite(LED_Gelb, HIGH); 
-          Serial.println("gelb ist an");
+          Serial.println("LED: gelb ist an");
       }
       else if(receivedDataMaster == GELB_AUS){ // Gelbe LED ausschalten
           digitalWrite(LED_Gelb, LOW);
-          Serial.println("gelb ist aus");
+          Serial.println("LED: gelb ist aus");
       }
       else if(receivedDataMaster == GRUEN_EIN){
           digitalWrite(LED_Gruen, HIGH);  // Grüne LED einschalten
-          Serial.println("gruen ist an");
+          Serial.println("LED: gruen ist an");
       }
 
       else if(receivedDataMaster == GRUEN_AUS){
         digitalWrite(LED_Gruen, LOW);  // Grüne LED ausschalten
-        Serial.println("gruen ist aus");
+        Serial.println("LED: gruen ist aus");
       }
     }
   }
