@@ -1,3 +1,12 @@
+/*
+Projektarbeit im Fach Mikrokontrollertechnik.
+Gruppe 1: Jan Skvortsov
+Der Quellcode stellt eine Verbindung über I2C Bus her. 
+Der Quellcode ist für den Meister erstellt
+
+*/
+
+
 
 #include <stm32f4xx.h>
 
