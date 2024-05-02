@@ -1,4 +1,7 @@
-//Vanessa Moser - Quellcode für den Slave
+/*  Gruppe 1
+    Vanessa Moser 
+    Kommunikation über I2C - Quellcode für den Slave
+*/
 
 #include <Arduino.h>
 #include <Wire.h>
